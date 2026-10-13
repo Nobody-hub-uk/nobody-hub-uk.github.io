@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS results (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    username TEXT NOT NULL,
+    mode TEXT NOT NULL,
+    secret_number INTEGER NOT NULL,
+    attempts INTEGER NOT NULL,
+    result TEXT NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);

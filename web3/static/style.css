@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    background:
+        radial-gradient(circle at top, #1a1a1a, #000),
+        radial-gradient(circle at bottom, rgba(255,0,76,0.15), transparent 60%),
+        radial-gradient(circle at left, rgba(255,0,76,0.1), transparent 60%),
+        radial-gradient(circle at right, rgba(255,0,76,0.1), transparent 60%);
+
+    color: white;
+    text-align: center;
+}
+
+.container {
+    margin-top: 40px;
+}
+
+h1 {
+    color: #ff004c;
+    text-shadow: 0 0 15px rgba(255,0,76,0.5);
+}
+
+.card {
+    width: 360px;
+    margin: 15px auto;
+    padding: 15px;
+    background: rgba(17, 17, 17, 0.95);
+    border: 1px solid #333;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+
+input, select {
+    padding: 12px 15px;
+    margin: 8px 5px;
+    background: #0a0a0a;
+    border: 2px solid #ff004c;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    width: 200px;
+    transition: all 0.3s ease;
+}
+
+input:hover, select:hover {
+    border-color: #ff3366;
+    background: #111;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #ff66cc;
+    box-shadow: 0 0 15px rgba(255,0,76,0.5);
+    background: #1a1a1a;
+}
+
+input:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#guess {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+#result {
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 18px;
+    min-height: 50px;
+    font-weight: bold;
+    color: #ff004c;
+    text-shadow: 0 0 5px rgba(255,0,76,0.5);
+}
+
+h3 {
+    color: #ff004c;
+    margin: 10px 0;
+    text-shadow: 0 0 5px rgba(255,0,76,0.3);
+}
+
+#top {
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.8;
+    background: rgba(0,0,0,0.5);
+    padding: 10px;
+    border-radius: 8px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#top::-webkit-scrollbar {
+    width: 8px;
+}
+
+#top::-webkit-scrollbar-track {
+    background: #1a1a1a;
+    border-radius: 10px;
+}
+
+#top::-webkit-scrollbar-thumb {
+    background: #ff004c;
+    border-radius: 10px;
+}
+
+#playAgainBtn {
+    padding: 10px 20px;
+    margin-top: 15px;
+    background: linear-gradient(135deg, #ff004c, #ff3366);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: none;
+}
+
+#playAgainBtn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255,0,76,0.8);
+}
+
+::placeholder {
+    color: #666;
+    font-size: 14px;
+}

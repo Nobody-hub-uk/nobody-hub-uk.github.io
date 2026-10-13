@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Guess Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1> GUESS GAME </h1>
+
+    <div class="card">
+        <input id="username" placeholder="👤 NICKNAME" autocomplete="off">
+
+        <select id="mode">
+            <option value="easy"> EASY (1-10)</option>
+            <option value="medium"> MEDIUM (1-50)</option>
+            <option value="insane"> INSANE (1-100)</option>
+        </select>
+    </div>
+
+    <div class="card">
+        <input id="guess" placeholder="🔢 ENTER NUMBER" autocomplete="off">
+        <div id="result">✨ Введите никнейм чтобы начать</div>
+        <button id="playAgainBtn" style="display: none;">🔄 Играть снова</button>
+    </div>
+
+    <div class="card">
+        <h3>🏆 TOP PLAYERS</h3>
+        <div id="top">Загрузка...</div>
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
